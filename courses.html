@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Courses — Potiofex Academy</title>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#3b2f2f" />
+<meta name="description" content="Potiofex Academy: Master the Art of Coffee — barista training, espresso science, latte art, and café operations." />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+</head>
+<body>
+<header class="header">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html" aria-label="Potiofex Academy home">
+      <span class="logo" aria-hidden="true">☕</span>
+      <span class="brand-wrap">
+        <span class="brand-title">Potiofex Academy</span>
+        <span class="brand-sub">Master the Art of Coffee</span>
+      </span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="courses.html#enroll">Enroll</a>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="mobile-menu hidden" role="dialog" aria-label="Mobile navigation">
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+    <a href="courses.html#enroll"><strong>Enroll</strong></a>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <h1>Courses</h1>
+    <p class="section-sub">Choose your path — from beginner to professional Potiofex.</p>
+  </section>
+
+  <section class="grid three">
+    <article class="card">
+      <div class="cover"></div>
+      <div class="body">
+        <span class="pill">Beginner • 2 days</span>
+        <h3>Barista Foundations</h3>
+        <p>Intro to espresso & milk, grinder basics, cleaning & safety, café etiquette. Ideal for newcomers.</p>
+        <div class="price"><strong>₹6,500</strong><button class="btn" data-course="Barista Foundations">Enroll</button></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="cover"></div>
+      <div class="body">
+        <span class="pill">Intermediate • 5 days</span>
+        <h3>Espresso & Latte Art</h3>
+        <p>Dial‑in methods, extraction science, milk chemistry, free‑pour hearts, tulips & rosettas. Service workflow.</p>
+        <div class="price"><strong>₹18,000</strong><button class="btn" data-course="Espresso & Latte Art">Enroll</button></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="cover"></div>
+      <div class="body">
+        <span class="pill">Professional • 10 days</span>
+        <h3>Potiofex Pro Certification</h3>
+        <p>Signature beverages, menu costing, café ops, speed & consistency drills, customer experience. Final exam.</p>
+        <div class="price"><strong>₹39,000</strong><button class="btn" data-course="Potiofex Pro Certification">Enroll</button></div>
+      </div>
+    </article>
+  </section>
+
+  <section id="enroll" class="enroll-section">
+    <h2>Enroll Now</h2>
+    <p class="section-sub">Seats are limited per cohort. Secure your spot.</p>
+    <form class="form" id="enrollForm" novalidate>
+      <label for="name">Full Name</label>
+      <input id="name" name="name" placeholder="Your name" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" placeholder="+91 …" required>
+      <label for="course">Select Course</label>
+      <select id="course" name="course" required>
+        <option value="" disabled selected>Choose a course</option>
+        <option>Barista Foundations</option>
+        <option>Espresso & Latte Art</option>
+        <option>Potiofex Pro Certification</option>
+      </select>
+      <label for="message">Message (optional)</label>
+      <textarea id="message" name="message" rows="4" placeholder="Questions, preferred dates, experience level…"></textarea>
+      <button type="submit" class="btn primary">Submit Application</button>
+      <div class="note">By submitting you agree to our terms & privacy policy.</div>
+    </form>
+  </section>
+</main>
+
+<!-- Modal for quick enroll -->
+<dialog id="quickDialog">
+  <form method="dialog" class="qd-wrap">
+    <h3>Enroll in <span id="qdCourse"></span></h3>
+  </form>
+  <form id="quickForm" class="qd-wrap">
+    <input name="name" placeholder="Full name" required>
+    <input name="email" type="email" placeholder="Email" required>
+    <input name="phone" type="tel" placeholder="Phone" required>
+    <div class="qd-actions">
+      <button type="button" class="btn" id="qdCancel">Cancel</button>
+      <button type="submit" class="btn primary">Send</button>
+    </div>
+  </form>
+</dialog>
+
+<footer>
+  <div class="footer-inner">
+    <div class="foot-col">
+      <div class="brand">
+        <span class="logo">☕</span>
+        <div>
+          <div class="brand-title">Potiofex Academy</div>
+          <div class="brand-sub">Craft • Science • Service</div>
+        </div>
+      </div>
+      <p class="foot-text">Training drink‑makers of distinction. Specialty‑coffee skills taught by practitioners.</p>
+    </div>
+    <div class="foot-col">
+      <div class="foot-title">Navigate</div>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+      <a href="courses.html#enroll">Enroll</a>
+    </div>
+    <div class="foot-col">
+      <div class="foot-title">Contact</div>
+      <div class="foot-text">hello@potiofex.academy</div>
+      <div class="foot-text">+91‑90000‑00000</div>
+      <div class="socials">
+        <a aria-label="Instagram" href="#">📷</a>
+        <a aria-label="YouTube" href="#">▶️</a>
+        <a aria-label="LinkedIn" href="#">in</a>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© <span id="year"></span> Potiofex Academy. All rights reserved.</div>
+</footer>
+<script src="app.js"></script>
+
+</body>
+</html>

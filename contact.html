@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact — Potiofex Academy</title>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#3b2f2f" />
+<meta name="description" content="Potiofex Academy: Master the Art of Coffee — barista training, espresso science, latte art, and café operations." />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+</head>
+<body>
+<header class="header">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html" aria-label="Potiofex Academy home">
+      <span class="logo" aria-hidden="true">☕</span>
+      <span class="brand-wrap">
+        <span class="brand-title">Potiofex Academy</span>
+        <span class="brand-sub">Master the Art of Coffee</span>
+      </span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="courses.html#enroll">Enroll</a>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="mobile-menu hidden" role="dialog" aria-label="Mobile navigation">
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+    <a href="courses.html#enroll"><strong>Enroll</strong></a>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <h1>Contact</h1>
+    <p class="section-sub">Questions? Reach out — we’ll respond within one business day.</p>
+  </section>
+  <section class="grid two">
+    <form class="form" id="contactForm" novalidate>
+      <label for="cname">Full Name</label>
+      <input id="cname" name="name" placeholder="Your name" required>
+      <label for="cemail">Email</label>
+      <input id="cemail" name="email" type="email" placeholder="you@example.com" required>
+      <label for="cmsg">Message</label>
+      <textarea id="cmsg" name="message" rows="6" placeholder="How can we help?" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+      <div class="note">Or write to hello@potiofex.academy</div>
+    </form>
+    <aside class="panel">
+      <h3>Location</h3>
+      <p>Potiofex Academy<br/>Indiranagar, Bengaluru, KA</p>
+      <h3>Hours</h3>
+      <p>Mon–Sat: 9:30–18:00</p>
+      <h3>Phone</h3>
+      <p>+91‑90000‑00000</p>
+    </aside>
+  </section>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="foot-col">
+      <div class="brand">
+        <span class="logo">☕</span>
+        <div>
+          <div class="brand-title">Potiofex Academy</div>
+          <div class="brand-sub">Craft • Science • Service</div>
+        </div>
+      </div>
+      <p class="foot-text">Training drink‑makers of distinction. Specialty‑coffee skills taught by practitioners.</p>
+    </div>
+    <div class="foot-col">
+      <div class="foot-title">Navigate</div>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+      <a href="courses.html#enroll">Enroll</a>
+    </div>
+    <div class="foot-col">
+      <div class="foot-title">Contact</div>
+      <div class="foot-text">hello@potiofex.academy</div>
+      <div class="foot-text">+91‑90000‑00000</div>
+      <div class="socials">
+        <a aria-label="Instagram" href="#">📷</a>
+        <a aria-label="YouTube" href="#">▶️</a>
+        <a aria-label="LinkedIn" href="#">in</a>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© <span id="year"></span> Potiofex Academy. All rights reserved.</div>
+</footer>
+<script src="app.js"></script>
+
+</body>
+</html>
