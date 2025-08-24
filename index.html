@@ -3,14 +3,13 @@
 <head>
   <title>Potiofex Academy — Master the Art of Coffee</title>
   <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#3b2f2f" />
-<meta name="description" content="Potiofex Academy: Master the Art of Coffee — barista training, espresso science, latte art, and café operations." />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css" />
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#3b2f2f" />
+  <meta name="description" content="Potiofex Academy: Master the Art of Coffee — barista training, espresso science, latte art, and café operations." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
 <header class="header">
@@ -43,7 +42,7 @@
     <div class="hero-inner">
       <span class="tag">NEW • Cohort starting Sept 15</span>
       <h1>Become a Certified <em>Potiofex</em></h1>
-      <p class="lead">Hands‑on barista training in espresso science, milk chemistry, latte art, café workflow and customer experience.</p>
+      <p class="lead">Hands-on barista training in espresso science, milk chemistry, latte art, café workflow and customer experience.</p>
       <div class="cta-row">
         <a class="btn primary" href="courses.html#enroll">Enroll Now</a>
         <a class="btn ghost" href="courses.html">View Courses</a>
@@ -57,9 +56,9 @@
     <div class="hero-card">
       <h3>What you'll craft</h3>
       <ul class="craft-list">
-        <li><span class="pill">Espresso</span> Dial‑in & Extraction</li>
+        <li><span class="pill">Espresso</span> Dial-in & Extraction</li>
         <li><span class="pill">Milk</span> Foaming & Latte Art</li>
-        <li><span class="pill">Brew</span> Pour‑over Science</li>
+        <li><span class="pill">Brew</span> Pour-over Science</li>
         <li><span class="pill">Ops</span> Café Workflow</li>
       </ul>
     </div>
@@ -69,8 +68,8 @@
     <article class="card">
       <div class="cover"></div>
       <div class="body">
-        <span class="pill">Hands‑on</span>
-        <h3>Studio‑style training</h3>
+        <span class="pill">Hands-on</span>
+        <h3>Studio-style training</h3>
         <p>Small cohorts with one trainer per 6 students. Practice on commercial grinders and machines.</p>
       </div>
     </article>
@@ -87,11 +86,117 @@
       <div class="body">
         <span class="pill">Certification</span>
         <h3>Portfolio & certificate</h3>
-        <p>Graduate with a skills log, latte‑art reel and professional certificate.</p>
+        <p>Graduate with a skills log, latte-art reel and professional certificate.</p>
       </div>
     </article>
   </section>
 </main>
+<!-- Contact Us Section -->
+<section id="contact">
+  <div class="contact-box">
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label>Your Name</label>
+        <input type="text" name="fname" placeholder="Enter your name" required />
+
+        <label>Your Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required />
+
+        <label>Message</label>
+        <textarea name="message" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Full viewport height and center */
+  #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f1eb; /* light sage background */
+    padding: 20px;
+  }
+
+  .contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Card style with lighter coffee/sage colors */
+  .contact-card {
+    background-color: #d9cbb8; /* lighter coffee-bean tone */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    color: #3b2f2f; /* dark text for contrast */
+  }
+
+  .contact-card h2 {
+    margin-bottom: 20px;
+    color: #6b4f3b; /* coffee accent for heading */
+  }
+
+  .contact-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-card input,
+  .contact-card textarea {
+    padding: 12px;
+    border: 1px solid #bba78f;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f5f3ed; /* very light sage input background */
+    color: #3b2f2f;
+  }
+
+  .contact-card textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .contact-card button {
+    padding: 12px;
+    background-color: #c69c6d; /* soft coffee-sage accent button */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .contact-card button:hover {
+    background-color: #b88b58;
+  }
+
+  #form-status {
+    margin-top: 15px;
+    color: #6b4f3b;
+  }
+</style>
+
+
+
+
+
+
 <footer>
   <div class="footer-inner">
     <div class="foot-col">
@@ -102,7 +207,7 @@
           <div class="brand-sub">Craft • Science • Service</div>
         </div>
       </div>
-      <p class="foot-text">Training drink‑makers of distinction. Specialty‑coffee skills taught by practitioners.</p>
+      <p class="foot-text">Training drink-makers of distinction. Specialty-coffee skills taught by practitioners.</p>
     </div>
     <div class="foot-col">
       <div class="foot-title">Navigate</div>
@@ -114,7 +219,7 @@
     <div class="foot-col">
       <div class="foot-title">Contact</div>
       <div class="foot-text">hello@potiofex.academy</div>
-      <div class="foot-text">+91‑90000‑00000</div>
+      <div class="foot-text">+91-90000-00000</div>
       <div class="socials">
         <a aria-label="Instagram" href="#">📷</a>
         <a aria-label="YouTube" href="#">▶️</a>
@@ -124,70 +229,15 @@
   </div>
   <div class="copy">© <span id="year"></span> Potiofex Academy. All rights reserved.</div>
 </footer>
-<script src="app.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function(){
-      emailjs.init("gCEeER6Y6mDw4mvmv"); // 
-  })();
-</script>
-<form id="contact-form">
-  <input type="text" name="user_name" placeholder="Your Name" required />
-  <input type="email" name="user_email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send</button>
-</form>
-<p id="form-status"></p>
-<script>
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
-      event.preventDefault();
-
-      emailjs.sendForm("service_o610yl6", "template_jhygdof", this)
-        .then(function() {
-          document.getElementById("form-status").innerText = "Message sent successfully!";
-        }, function(error) {
-          document.getElementById("form-status").innerText = "Failed to send. Error: " + JSON.stringify(error);
-        });
-  });
-</script>
-<!-- 📩 Contact Form Section -->
-<section id="contact" style="padding: 60px 20px; background-color: #d8e2dc;">
-  <div style="max-width: 600px; margin: auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    
-    <h2 style="text-align:center; color:#5a3e2b; font-family:'Georgia',serif; margin-bottom: 20px;">
-      Contact Us
-    </h2>
-    
-    <form id="contact-form" style="display:flex; flex-direction:column; gap:15px;">
-      <input type="text" name="portiofex academy" placeholder="portiofex academy" required 
-             style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:16px;" />
-      
-      <input type="email" name="mohammedsalmaan112gmail.com"  placeholder="mohammedsalmaan112gmail.com" required 
-             style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:16px;" />
-      
-      <textarea name="message" placeholder="Your Message" required 
-                style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:16px; min-height:120px;"></textarea>
-      
-      <button type="submit" 
-              style="background:#5a3e2b; color:#fff; border:none; padding:14px; font-size:16px; border-radius:8px; cursor:pointer; transition:0.3s;">
-        Send Message
-      </button>
-    </form>
-    
-    <p id="form-status" style="text-align:center; margin-top:15px; font-size:14px; color:#333;"></p>
-  </div>
-</section>
 
 <!-- Load EmailJS SDK -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   (function(){
-      emailjs.init("gCEeER6Y6mDw4mvmv");  // 
+      emailjs.init("gCEeER6Y6mDw4mvmv");  // your public key
   })();
-</script>
 
-<!-- Send Form Script -->
-<script>
+  // Send Form Script
   document.getElementById("contact-form").addEventListener("submit", function(event) {
       event.preventDefault();
 
@@ -205,3 +255,4 @@
 
 </body>
 </html>
+
